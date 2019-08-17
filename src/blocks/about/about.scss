@@ -20,4 +20,17 @@
     }
   }
 
+  &__inner {
+    @include row;
+  }
+  &__text {
+    @include col();
+    @include col(lg, 5);
+    margin-bottom: 40px;
+  }
+  &__gallery {
+    @include col();
+    @include col(lg, 7);
+  }
+
 }

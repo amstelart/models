@@ -70,13 +70,15 @@
     "accordion-group": [],
     "faq": [],
     "profile": [],
-    "reviews-carousel": []
+    "reviews-carousel": [],
+    "gallery": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
-    "../../node_modules/owl.carousel/dist/assets/owl.carousel.css"
+    "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
+    "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -92,7 +94,8 @@
     "./node_modules/owl.carousel/dist/owl.carousel.js",
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/object-fit-images/dist/ofi.js",
-    "./node_modules/t-aria-accordion/dist/aria-accordion.min.js"
+    "./node_modules/t-aria-accordion/dist/aria-accordion.min.js",
+    "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"
