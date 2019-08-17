@@ -1,0 +1,13 @@
+// В этом файле должны быть стили для БЭМ-блока conditions, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.conditions {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background-image: url('../img/bg-logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}

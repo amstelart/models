@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group 24</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-214.000000, -6899.000000)">
+            <g id="Group-28" transform="translate(215.000000, 6301.000000)">
+                <g id="Group-26" transform="translate(0.000000, 599.000000)">
+                    <g id="Group-24">
+                        <g id="download-arrow" transform="translate(13.000000, 10.000000)" fill="#979797" fill-rule="nonzero">
+                            <path d="M12.3283804,11.928375 C12.5708587,11.678625 12.5708587,11.2854375 12.3283804,11.0356875 C12.0774239,10.794375 11.6732935,10.794375 11.4313804,11.0356875 L6.88307609,15.562125 L6.88307609,0.6249375 C6.88307609,0.27675 6.60498913,0 6.25511957,0 C5.90525,0 5.61811957,0.27675 5.61811957,0.6249375 L5.61811957,15.562125 L1.0788587,11.0356875 C0.827902174,10.794375 0.432815217,10.794375 0.181858696,11.0356875 C-0.0606195652,11.2854375 -0.0606195652,11.678625 0.181858696,11.928375 L5.80690217,17.526375 C6.04938043,17.7676875 6.45294565,17.7676875 6.70390217,17.526375 L12.3283804,11.928375 Z" id="Path" transform="translate(6.255120, 8.853680) rotate(-180.000000) translate(-6.255120, -8.853680) "></path>
+                        </g>
+                        <circle id="Oval" stroke="#979797" cx="19" cy="19" r="19"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
