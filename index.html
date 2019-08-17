@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Empire models studio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="container">
+          <div class="page-header__inner">
+            <a href="#" class="logo"><img src="img/header-logo.svg" alt=""></a>
+
+            <a href="#" class="btn"><span>Узнать больше</span></a>
+          </div>
+        </div>
+      </header>
+
+
+      <main role="main">
+
+        <div class="intro">
+          <div class="container">
+            <div class="intro__inner">
+              <div class="intro__logo">
+                <p class="intro__logo-text">Работа в Москве для девушек 18+</p>
+                <img class="intro__logo-img" src="img/logo.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="advantage">
+          <div class="container">
+            <h2 class="section-title">Привелегии</h2>
+            <ul class="advantage__list">
+              <li class="advantage__list-item">
+                <div class="inner inner--color-main">
+                  <h2>Доход</h2>
+                  <p>Стабильные высокие <br> выплаты от двух раз в месяц</p>
+                </div>
+              </li>
+              <li class="advantage__list-item">
+                <div class="inner inner--color-main-2">
+                  <h2>Конфидециальность</h2>
+                  <p>Несомненная <br>и обязательная</p>
+                </div>
+              </li>
+              <li class="advantage__list-item">
+                <div class="inner inner--color-main-3">
+                  <h2>Коллектив</h2>
+                  <p>Молодой<br> и дружный</p>
+                </div>
+              </li>
+              <li class="advantage__list-item">
+                <div class="inner inner--color-main">
+                  <h2>Безопасность</h2>
+                  <p>Во всех<br> отношениях</p>
+                </div>
+              </li>
+              <li class="advantage__list-item">
+                <div class="inner inner--color-main-2">
+                  <h2>Проживание</h2>
+                  <p>Предоставляется<br> бесплатно</p>
+                </div>
+              </li>
+              <li class="advantage__list-item">
+                <div class="inner inner--color-main-3">
+                  <h2>Питение</h2>
+                  <p>Бесплатно <br>за наш счет</p>
+                </div>
+              </li>
+            </ul>
+            <div class="advantage__works">
+              <div class="item">
+                <div class="item-title">5/2</div>
+                <p>график работы<br>  и выходных</p>
+              </div>
+              <div class="item">
+                <div class="item-title">10 часов</div>
+                <p>в день с двумя<br> часами перерыва</p>
+              </div>
+              <div class="item">
+                <div class="item-title">2 раза</div>
+                <p>в месяц оплата<br> работы</p>
+              </div>
+              <div class="item">
+                <div class="item-title">50/50</div>
+                <p>модель работы</p>
+              </div>
+            </div>
+            <div class="advantage__cards">
+              <div class="advantage__card">
+                <div class="advantage__card-inner">
+                  <h2>Бесплатное проживание</h2>
+                  <p>Даём бесплатное проживание <br>(у тебя будет своя большая комфортная полностью оборудованная комната <br>со всеми удобствами)</p>
+                  <a href="#" class="btn"><span>Узнать больше</span></a>
+                </div>
+              </div>
+              <div class="advantage__card">
+                <div class="advantage__card-inner">
+                  <h2>Еженедельная оплата </h2>
+                  <p>Платим новым сотрудницам <br> еженедельно</p>
+                  <a href="#" class="btn"><span>Заполнить анкету</span></a>
+                </div>
+              </div>
+              <div class="advantage__card">
+                <div class="advantage__card-inner">
+                  <h2>Продвижение </h2>
+                  <p>Мы вкладываем деньги <br>в продвижение и поможем тебе <br>в кратчайшие сроки добиться высоких результатов</p>
+                  <a href="#" class="btn"><span>Узнать больше</span></a>
+                </div>
+              </div>
+              <div class="advantage__card">
+                <div class="advantage__card-inner">
+                  <h2>Бесплатное питание </h2>
+                  <p>Бесплатное питание <br>(завтрак, обед, ужин)</p>
+                  <a href="#" class="btn"><span>Заполнить анкету</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="conditions">
+          <div class="container">
+            <h2 class="section-title">Условия работы</h2>
+            <div class="infographics">
+              <div class="infographics__part">
+                <div class="infographics__item">Артистичность, <br>харизматичность</div>
+                <div class="infographics__item">Онлайн 8 <br>часов в день</div>
+              </div>
+              <div class="infographics__box">
+                <!-- <img src="img/infographics-box-img.png" alt=""> -->
+              </div>
+              <div class="infographics__part">
+                <div class="infographics__item">Приятная <br>внешность</div>
+                <div class="infographics__item">Совершеннолетие <br>18+</div>
+              </div>
+            </div>
+            <p class="text-center"><a href="#" class="btn"><span>Заполнить анкету</span></a></p>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <h2 class="section-title">Кто мы?</h2>
+            <div class="about__inner">
+              <p>Мы — лучшие в России вебкам-студии  "Empire models studio" предлагаем тебе сделать шаг к красивому будущему и осуществлять все свои желания уже с первых месяцев работы.</p>
+              <p>Наши студии готовы стать твоим проводником в мире доступной и несложной работы вебкам-моделью. Попробуй и, быть может, опыт модели станет самым незабываемым приключением и одним из ярких поворотов в твоей жизни.</p>
+              <p>ВЕБКАМ - это отдельная реальность, в которой ты сможешь чувствовать себя комфортно и конвертировать внимание аудитории в живые деньги, при этом
+              не выходя за пределы стильно оформленной комнаты с компьютером и веб-камерой.
+              Для этого необязательно быть эталоном женственности и красоты. В столь творческой сфере ценятся индивидуальность, харизматичность и неординарность. </p>
+
+              <p>Мы предлагаем работу с высоким доходом на закрытых в России зарубежных сайтах видео-знакомств с оплатой за каждую минуту общения. Стоимость зависит от сайта
+              и вашей популярности. Только ты, твоя харизма, веб-камера и круглосуточный доступ
+              к многомиллионной аудитории через самые эксклюзивные и приватные сайты вебкам-индустрии.</p>
+
+              <p>Для каждой веб-модели мы предлагаем наиболее выгодные условия сотрудничества
+              и гарантируем выплату денежных средств раз в две недели, безопасность, которая является одним из важных факторов в данной работе; конфиденциальность твоих личных данных.</p>
+              <p><a href="#" class="btn"><span>Узнать больше</span></a></p>
+            </div>
+            <h2 class="h1">Отзывы дуйствующий моделей</h2>
+            <div class="reviews-carousel owl-carousel">
+              <div class="reviews-card">
+                <div class="reviews-card__photo-wrap"></div>
+                <div class="reviews-card__body">
+                  <h3>Елена, 23 года </h3>
+                  <p>Раньше я никогда не задумывалась о том, как можно заработать на виртуальном общении. все общаются в наше время через скайп  и прочие программы, так почему бы не заработать на общении с элементами флирта?</p>
+                  <p>Самое лучшее в работе - это полная конфиденциальность, наши админы внимательно следят, чтобы необходимые страны были заблокированы, например Россия, Беларусь, Казахстан
+                  и Украина - пользователи из этих стран никогда не зайдут
+                  на мой профайл. Ну и конечно мои фотографии и личная информация находятся в полной сохранности на моей студии. </p>
+                </div>
+              </div>
+              <div class="reviews-card">
+                <div class="reviews-card__photo-wrap"></div>
+                <div class="reviews-card__body">
+                  <h3>Вера, 26 лет </h3>
+                  <p>
+                    После окончания университета я почти полгода пыталась найти работу по специальности, но долго не находила ничего подходящего. Изучая очередной сайт с предложениями
+                    о работе, я наткнулась на интересное объявление от вебкам студии MagicMike, на которую я через несколько дней пришла и осталась работать. Теперь прошло уже почти
+                    два года, и я могу позволить себе работать 3-4 дня
+                    в неделю и зарабатывать не меньше 3000$ за месяц.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lead-box">
+              <p>Зарабатывай большие деньги без рутины, расписания и серых будней! Заполни анкету для работы в студиях “Empire models studio”! </p>
+              <a href="#" class="btn"><span>Заполнить анкету</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq">
+          <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <!-- <! - ВИДЖЕТ НАЧАЛО / ГРУППА АККОРДЕОНОВ ->  -->
+            <div class="accordion-group" id="accordion-group-faq">
+
+              <!-- <! - НАЧАЛО АККОРДЕОНА ->  -->
+              <section class=" accordion-group__accordion">
+                <header class=" accordion-group__accordion-head">
+                  <h3 class="accordion-group__accordion-heading">
+                    <button type="button" class="accordion-group__accordion-btn "> Что такое веб-модель и чем занимаются в вебкам-студии?​ </button>
+                  </h3>
+                </header>
+                <div class="accordion-group__accordion-panel">
+                  <div class="accordion-group__accordion-content">
+                    <p>Работа веб-моделью – это возможность зарабатывать хорошие деньги без какого-либо опыта и собственных вложений. Весь доход зависит от самой веб-модели, от ее коммуникабельности и внешних данных, в обязанности которой входит ежедневное общение с клиентами в платных приват-чатах.</p>
+                    <p>Девушка работает в изолированной и комфортной комнате, которая оснащена всем необходимым, в том числе современным компьютером и веб-камерой.</p>
+                    <p>Собеседник будет смотреть на вас постоянно, веб-модель общается с ним, но при этом сама может отказаться наблюдать за клиентом. Девушки переписываются, иногда общаются с людьми при помощи голосовой связи. Наши клиенты приват-чатов – это исключительно иностранцы, поэтому уровень анонимности максимальный, а риск встретить знакомого равен нулю.</p>
+                  </div>
+                </div>
+              </section>
+              <!-- <! - ACCORDION END -> -->
+
+
+              <!-- <! - НАЧАЛО АККОРДЕОНА ->  -->
+              <section class="accordion-group__accordion">
+                <header class="accordion-group__accordion-head">
+                  <h3 class="accordion-group__accordion-heading">
+                    <button type="button" class=" accordion-group__accordion-btn "> Кто может стать веб-моделью? </button>
+                  </h3>
+                </header>
+                <div class="accordion-group__accordion-panel">
+                  <div class="accordion-group__accordion-content">
+                    <p>Работа веб-моделью – это возможность зарабатывать хорошие деньги без какого-либо опыта и собственных вложений. Весь доход зависит от самой веб-модели, от ее коммуникабельности и внешних данных, в обязанности которой входит ежедневное общение с клиентами в платных приват-чатах.</p>
+                    <p>Девушка работает в изолированной и комфортной комнате, которая оснащена всем необходимым, в том числе современным компьютером и веб-камерой.</p>
+                    <p>Собеседник будет смотреть на вас постоянно, веб-модель общается с ним, но при этом сама может отказаться наблюдать за клиентом. Девушки переписываются, иногда общаются с людьми при помощи голосовой связи. Наши клиенты приват-чатов – это исключительно иностранцы, поэтому уровень анонимности максимальный, а риск встретить знакомого равен нулю.</p>
+                  </div>
+                </div>
+              </section>
+              <!-- <! - ACCORDION END -> -->
+
+              <!-- <! - НАЧАЛО АККОРДЕОНА ->  -->
+              <section class="accordion-group__accordion">
+                <header class="accordion-group__accordion-head">
+                  <h3 class="accordion-group__accordion-heading">
+                    <button type="button" class=" accordion-group__accordion-btn "> Гарантируется ли конфиденциальность?  </button>
+                  </h3>
+                </header>
+                <div class="accordion-group__accordion-panel">
+                  <div class="accordion-group__accordion-content">
+                    <p>Работа веб-моделью – это возможность зарабатывать хорошие деньги без какого-либо опыта и собственных вложений. Весь доход зависит от самой веб-модели, от ее коммуникабельности и внешних данных, в обязанности которой входит ежедневное общение с клиентами в платных приват-чатах.</p>
+                    <p>Девушка работает в изолированной и комфортной комнате, которая оснащена всем необходимым, в том числе современным компьютером и веб-камерой.</p>
+                    <p>Собеседник будет смотреть на вас постоянно, веб-модель общается с ним, но при этом сама может отказаться наблюдать за клиентом. Девушки переписываются, иногда общаются с людьми при помощи голосовой связи. Наши клиенты приват-чатов – это исключительно иностранцы, поэтому уровень анонимности максимальный, а риск встретить знакомого равен нулю.</p>
+                  </div>
+                </div>
+              </section>
+              <!-- <! - ACCORDION END -> -->
+
+              <!-- <! - НАЧАЛО АККОРДЕОНА ->  -->
+              <section class="accordion-group__accordion">
+                <header class="accordion-group__accordion-head">
+                  <h3 class="accordion-group__accordion-heading">
+                    <button type="button" class=" accordion-group__accordion-btn "> Какие перспективы у такой карьеры? </button>
+                  </h3>
+                </header>
+                <div class="accordion-group__accordion-panel">
+                  <div class="accordion-group__accordion-content">
+                    <p>Работа веб-моделью – это возможность зарабатывать хорошие деньги без какого-либо опыта и собственных вложений. Весь доход зависит от самой веб-модели, от ее коммуникабельности и внешних данных, в обязанности которой входит ежедневное общение с клиентами в платных приват-чатах.</p>
+                    <p>Девушка работает в изолированной и комфортной комнате, которая оснащена всем необходимым, в том числе современным компьютером и веб-камерой.</p>
+                    <p>Собеседник будет смотреть на вас постоянно, веб-модель общается с ним, но при этом сама может отказаться наблюдать за клиентом. Девушки переписываются, иногда общаются с людьми при помощи голосовой связи. Наши клиенты приват-чатов – это исключительно иностранцы, поэтому уровень анонимности максимальный, а риск встретить знакомого равен нулю.</p>
+                  </div>
+                </div>
+              </section>
+              <!-- <! - ACCORDION END -> -->
+
+            </div>
+          </div>
+        </section>
+
+        <section class="profile">
+          <div class="container">
+            <h2 class="section-title">Анкета</h2>
+            <div class="profile__inner">
+              <div class="profile__form-wrap">
+                <form action="" class="profile__form">
+                  <div class="fields-group">
+                    <div class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" required type="text" id="" name="">
+                        <span class="field-text__bar"></span>
+                        <label class="field-text__name">Ваше полное имя</label>
+                      </span>
+                    </div>
+                    <div class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" required type="text" id="" name="">
+                        <span class="field-text__bar"></span>
+                        <label class="field-text__name">Дата рождения</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="fields-group">
+                    <div class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" required type="text" id="" name="">
+                        <span class="field-text__bar"></span>
+                        <label class="field-text__name">Ваш телефон</label>
+                      </span>
+                    </div>
+                    <div class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" required type="text" id="" name="">
+                        <span class="field-text__bar"></span>
+                        <label class="field-text__name">E-mail</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="fields-group">
+                    <div class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" required type="text" id="" name="">
+                        <span class="field-text__bar"></span>
+                        <label class="field-text__name">Знание английского</label>
+                      </span>
+                    </div>
+                    <div class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" required type="text" id="" name="">
+                        <span class="field-text__bar"></span>
+                        <label class="field-text__name">Выберите место работы</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="fields-group">
+                    <div class="field-file">
+                      <label class="field-file__input-wrap">
+                        <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
+                        <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Загрузить фото</div>
+                      </label>
+                    </div>
+                    <div class="field-actions">
+                      <button class="btn"><span>Отправить</span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="profile__image">
+                <img src="img/profile-img.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__info">
+          <div class="container">
+            <div class="page-footer__parts">
+              <div class="page-footer__col col-call">
+                <p>Бесплатный звонок по России</p>
+                <p><a class="call-num" href="88000000000">8 800 000−00−00</a></p>
+              </div>
+              <div class="page-footer__col col-logo">
+                <img src="img/logo.svg" alt="">
+              </div>
+              <div class="page-footer__col col-links">
+                <p>Официальный представитель</p>
+                <p><a href="https://adultentertainmentexpo.com">https://adultentertainmentexpo.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__bootom">
+          <div class="container">
+            <p>© 2019 Empire models studio. Все права защищены.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
