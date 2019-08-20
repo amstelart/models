@@ -3,7 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 $toggler-part-height:         3px !default;
-$toggler-part-bg-color:       #000 !default;
+$toggler-part-bg-color:       $color-main;
 
 .burger {
 
@@ -17,6 +17,10 @@ $toggler-part-bg-color:       #000 !default;
   height: 30px;
   user-select: none;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 
   > span {
     display: inline-block;

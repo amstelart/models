@@ -21,8 +21,10 @@ $transition-time:             0.3s !default;
 
   $block-name:                &; // #{$block-name}__element
 
-  position: relative;
+  // position: relative;
   z-index: 10;
+  flex-grow: 1;
+  text-align: center;
 
   // первый уровень
   &__list {
@@ -36,14 +38,36 @@ $transition-time:             0.3s !default;
       // открытие/закрытие меню только в случае работающего JS
 
       .js & {
+        display: none;
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.2s;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        background: lighten($color-dark, 4%);
+        padding: 15px;
       }
 
       .js #{$block-name}--open & {
+        display: block;
         max-height: 100vh;
         transition: max-height 0.6s;
+      }
+
+      #{$block-name}__item {
+        margin-bottom: 5px;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid lighten(#444, 7%);
+        }
+      }
+
+      #{$block-name}__link {
+        padding: 10px 0;
+        text-transform: uppercase;
       }
     }
 
@@ -51,97 +75,33 @@ $transition-time:             0.3s !default;
     @media (min-width: $menu-desktop-width) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
   &__item {
     position: relative;
-
-    &--active {
-
-      & > #{$block-name}__link {
-        color: #000;
-      }
-    }
+    margin: 0 2%;
   }
 
   &__link {
     display: block;
     padding: 0.5em;
     text-decoration: none;
-    background-color: #fff;
+    background-color: transparent;
+    color: $color-light;
+    font-size: 16px;
+
+    &.active {
+      color: $color-main;
+    }
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
-    }
-
-    &--lvl-2 {
-
-      @media (max-width: ($menu-desktop-width - 1)) {
-        padding-left: 1.2em;
-      }
-    }
-
-    &--lvl-3 {
-
-      @media (max-width: ($menu-desktop-width - 1)) {
-        padding-left: 2.4em;
-      }
+      background-color: transparent;
     }
   }
-
-  &__sublist-wrapper {
-
-    &--lvl-2 {
-
-      @media (min-width: $menu-desktop-width) {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 1;
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        transition: opacity $transition-time;
-
-        // stylelint-disable  max-nesting-depth
-        #{$block-name}__item--show-child > &,
-        #{$block-name}__item:hover & {
-          opacity: 1;
-          height: auto;
-          overflow: visible;
-        }
-        // stylelint-enable
-      }
-    }
-
-    &--lvl-3 {
-
-      @media (min-width: $menu-desktop-width) {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 100%;
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        transition: opacity $transition-time;
-
-        // stylelint-disable  max-nesting-depth
-        #{$block-name}__item--show-child > &,
-        #{$block-name}__item--lvl-2:hover & {
-          opacity: 1;
-          height: auto;
-          overflow: visible;
-        }
-        // stylelint-enable
-      }
-    }
-  }
-
-
 
   // переключатель
 
@@ -150,6 +110,8 @@ $transition-time:             0.3s !default;
     padding: 0;
     background: none;
     border: none;
+    margin-left: 15px;
+    margin-top: 5px;
 
     .no-js & {
       display: none;

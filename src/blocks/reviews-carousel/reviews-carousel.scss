@@ -8,4 +8,14 @@
 
   margin-bottom: 60px;
 
+  .owl-item {
+
+    &:nth-child(even) {
+
+      .reviews-card {
+        border-color: $color-main-2;
+      }
+    }
+  }
+
 }

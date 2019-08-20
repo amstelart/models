@@ -6,10 +6,20 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 60px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &__inner {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 120px;
+    }
 
     p {
       color: $color-gray;
@@ -25,12 +35,23 @@
   }
   &__text {
     @include col();
-    @include col(lg, 5);
+    @include col(xl, 7);
     margin-bottom: 40px;
+
+    @media (min-width: $screen-lg) {
+      padding-right: 60px !important;
+    }
   }
   &__gallery {
     @include col();
-    @include col(lg, 7);
+    @include col(xl, 5);
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    .h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
   }
 
 }

@@ -8,11 +8,20 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $screen-md) {
+    flex-wrap: nowrap;
+  }
 
   .field-text {
-    max-width: 290px;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 70px;
+      max-width: 290px;
+    }
   }
 
   .field-actions {

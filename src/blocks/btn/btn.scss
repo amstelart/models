@@ -47,6 +47,7 @@ $border-radius:               3px !default;
     position: absolute;
     left: 0;
     top: 0;
+    transition: all $transition-time;
   }
 
   &:after {
@@ -58,6 +59,7 @@ $border-radius:               3px !default;
     position: absolute;
     left:18px;
     top: 18px;
+    transition: all $transition-time;
   }
 
   span {
@@ -66,11 +68,23 @@ $border-radius:               3px !default;
     position: relative;
     z-index: 1;
     padding: 5px 3px;
+    z-index: 2;
   }
 
   &:hover,
   &:focus {
     text-decoration: none;
+    transition: all $transition-time;
+
+    &:before {
+      transform: scale(1.2);
+      transition: all $transition-time;
+    }
+
+    &:after {
+      transform: scale(2);
+      transition: all $transition-time;
+    }
     // color: $text-color;
     // background-color: darken($gray-lightest, 10%);
     // border-color: darken($gray-lighter, 12%);

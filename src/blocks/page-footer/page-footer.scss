@@ -8,6 +8,10 @@
 
   background-color: #0d0c0c;
 
+  @media (max-width: ($screen-md - 1)) {
+    text-align: center;
+  }
+
   &__info {
     padding: 20px 0;
   }
@@ -29,6 +33,11 @@
   .col-call {
     max-width: 255px;
     flex-basis: 255px;
+
+    @media (max-width: ($screen-md - 1)) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
   }
 
   .col-logo {
@@ -50,6 +59,11 @@
     color: #ededed;
     white-space: nowrap;
     text-decoration: none;
+
+    @media (max-width: ($screen-md - 1)) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
   }
 
   .col-links {
@@ -58,6 +72,11 @@
       color: $color-main;
       text-decoration: underline;
       font-size: 16px;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      flex-basis: 100%;
+      max-width: 100%;
     }
   }
 

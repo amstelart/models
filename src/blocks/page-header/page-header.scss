@@ -13,8 +13,48 @@
   width: 100%;
   padding: 30px 0;
 
+  @media (max-width: ($screen-sm - 1)) {
+    .btn.scroll-link {
+      display: none;
+    }
+  }
+
   &__inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+  }
+
+  &--sticky {
+    background-color: $color-darken;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    opacity: 1;
+    z-index: 10;
+    padding: 10px 0 !important;
+    animation: slideInDown 0.5s 1 ease-in-out;
+
+    .logo {
+      margin-right: 15px;
+      max-width: 140px;
+    }
+
+    .burger {
+      align-self: flex-start;
+    }
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }

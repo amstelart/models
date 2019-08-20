@@ -13,16 +13,22 @@
   position: relative;
 
   &__inner {
-    min-height: 900px;
+    min-height: 100vh;
     display: flex;
     height: 100%;
     position: relative;
     z-index: 2;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $screen-md) {
+      min-height: 900px;
+    }
   }
 
   &__logo {
+
+    padding: 100px 20px;
   }
 
   &__logo-text {
